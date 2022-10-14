@@ -44,11 +44,10 @@ public class SchoolSystem implements ISignUp, IParams {
         arr.set(0,d);
         arr.set(1,z);
         arr.set(2,x);
-        //System.out.println("鐝骇鍓╀綑浜烘暟锛 "+arr);
     }
     public boolean addStudent(int stuType) {
 
-        h=arr.get(stuType-1);//鐝骇鍓╀綑浜烘暟
+        h=arr.get(stuType-1);
         if(h>0){
             h=h-1;  //0
             arr.set(stuType-1,h);
@@ -99,7 +98,7 @@ public class SchoolSystem implements ISignUp, IParams {
         SchoolSystem schoolSystem =new SchoolSystem(0,0,0);
         String a[]=schoolSystem.parse(s.nextLine());
         int[] x =schoolSystem.parseteam(s.nextLine());
-        schoolSystem.setaa(schoolSystem.getBig(),schoolSystem.getMedium(),schoolSystem.getSmall());//鏀 
+        schoolSystem.setaa(schoolSystem.getBig(),schoolSystem.getMedium(),schoolSystem.getSmall());
 
         int o=3;
         String ss="addStudent";
